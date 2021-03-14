@@ -15,13 +15,11 @@ class Stepic2_5_4 {
         for (int j = 0; j < m; j++){
             if (j % 2 == 0){
                 for (int k = 0; k < n; k++){
-                    array[k][j] = i;
-                    i++;
+                    array[k][j] = i++;
                 }
             } else {
                 for (int k = (n - 1); k >= 0; k -= 1){
-                    array[k][j] = i;
-                    i++;
+                    array[k][j] = i++;
                 }
             }
         }
