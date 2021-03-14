@@ -7,8 +7,8 @@
 
 class Stepic2_5_4 {
     public static void main(String args[]){
-        int n = 3;
-        int m = 4;
+        int n = 5;
+        int m = 5;
         int i = 1;
         int array[][] = new int[n][m];
 
@@ -18,7 +18,7 @@ class Stepic2_5_4 {
                     array[k][j] = i++;
                 }
             } else {
-                for (int k = (n - 1); k >= 0; k -= 1){
+                for (int k = (n - 1); k >= 0; k--){
                     array[k][j] = i++;
                 }
             }
