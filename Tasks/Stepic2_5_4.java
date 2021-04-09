@@ -1,14 +1,10 @@
-/*
-Решение задачи со степика
-курс алгоритмизация и программирование
-
-п.с. массивы удобнее инициализировать на джаве
- */
+import java.util.Scanner;
 
 class Stepic2_5_4 {
     public static void main(String args[]){
-        int n = 5;
-        int m = 5;
+        Scanner console = new Scanner(System.in);
+        int n = console.nextInt();
+        int m = console.nextInt();
         int i = 1;
         int array[][] = new int[n][m];
 
