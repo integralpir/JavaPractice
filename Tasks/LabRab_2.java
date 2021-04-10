@@ -63,11 +63,16 @@ public class LabRab_2 {
 
     public static void fifthTask(){
         int n = scanner.nextInt();
-        for (int i = 0; i < n; i++){
-            for (int j = n - 1; j > 0; j --)
+        for (int i = 1; i <= n; i++){
+            for (int k = n - i; k > 0; k--)
                 System.out.print(" ");
-            for (int k = 1; k <= n; k++)
+
+            for (int j = i; j > 0; j--)
                 System.out.print("X");
+
+            for (int z = i - 1; z > 0; z--)
+                System.out.print("X");
+
             System.out.println();
         }
     }
