@@ -1,0 +1,15 @@
+values() - возвращает массив всех значений enum
+Day[] days = Day.values();
+
+ordinal() - возвращает порядковый номер константы, вызывается у значение enum
+System.out.println(Day.FRIDAY.ordinal()); - 4
+
+toString() - преобразование в строку
+String str = Day.MONDAY.toString();
+
+valueOf() - обратное преобразование
+Day day = Day.valueOf("MONDAY");
+
+преобразование в число с помощью ordinal;
+обратное преобразование с помощью метода values()
+Day day = Day.values()[2];

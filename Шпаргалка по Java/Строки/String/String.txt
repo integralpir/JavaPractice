@@ -1,0 +1,22 @@
+Строки - это неизменяемые объекты в Java
+Интересные методы помимо перечисленных в картинках:
+split - разбивает строку на массив подстрок
+intern - добавляет строку в StringPool для того, чтобы сравнивать не объекты
+	 а ссылки из StringPool
+	 String a = "h1";
+	 String b = "hi";
+	 System.out.println(a == b); -- false
+	 System.out.println(a.intern() == b.intern()); -- true
+
+Интересные объекты работающие со строками:
+StringTokenizer - объект разделитель
+StringTokenizer имя = new StringTokenizer(строка, разделители);
+Пример работы:
+String str = "Good news everyone!"; 				Вывод:
+								Good
+StringTokenizer tokenizer = new StringTokenizer(str,"ne");	ws
+while (tokenizer.hasMoreTokens())				v
+{								ryo
+   String token = tokenizer.nextToken();			!
+   System.out.println(token);
+}
