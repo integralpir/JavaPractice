@@ -5,8 +5,8 @@ import java.util.*;
 
 public class LabRab_4 {
     public static Scanner scanner = new Scanner(System.in);
-    public static String src = "input.txt";
-    public static String dest = "output.txt";
+    public static String src = "inputLR4.txt";
+    public static String dest = "outputLR4.txt";
 
     public static void main(String[] args){
         int choice = scanner.nextInt();
