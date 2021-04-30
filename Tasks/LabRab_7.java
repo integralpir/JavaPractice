@@ -38,5 +38,20 @@ public class LabRab_7 {
         System.out.println(Str.equals(reverseStr) ? "YES" : "NO");
     }
 
-    public static void Task_3(){}
+    public static void Task_3(){
+        int x = (int) (Math.random() * 999);
+        for (int i = 1; i <= 10; i++){
+            int choice = scanner.nextInt();
+            if (choice == x){
+                System.out.println("Осталось печенек: " + i);
+                return;
+            } else if (choice > x) {
+                System.out.println("Число больше загаданного");
+            } else {
+                System.out.println("Число меньше загаданного");
+            }
+        }
+
+        System.out.println("Вы проиграли...");
+    }
 }

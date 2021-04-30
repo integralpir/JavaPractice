@@ -71,4 +71,6 @@ public class LabRab_6 {
         String max = Arrays.stream(chipSet).max((s1, s2) -> s1.length() - s2.length()).get();
         System.out.println(max.length());
     }
+
+    
 }
