@@ -1,5 +1,9 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.LocalTime;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class LabRab_7 {
     public static Scanner scanner = new Scanner(System.in);
@@ -10,6 +14,7 @@ public class LabRab_7 {
             case (1) -> Task_1();
             case (2) -> Task_2();
             case (3) -> Task_3();
+            case (4) -> Task_4();
         }
     }
 
@@ -53,5 +58,28 @@ public class LabRab_7 {
         }
 
         System.out.println("Вы проиграли...");
+    }
+
+    public static void Task_4(){
+        String src = "D:\\Java_Projects\\Tasks\\steps.txt";
+        ArrayList<List<Integer>> list = new ArrayList<>();
+        int rightSteps = 0, leftSteps = 0;
+        try(FileReader fileReader = new FileReader(src);
+            BufferedReader reader = new BufferedReader(fileReader))
+        {
+            while (reader.ready()){
+                List<Integer> line = Arrays.stream(reader.readLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
+                list.add(line);
+            }
+
+            for(List<Integer> line : list){
+                rightSteps += (line.get(0) * line.get(2));
+                leftSteps += (line.get(1) * line.get(2));
+            }
+
+            System.out.println(Math.abs(rightSteps - leftSteps) / 100);
+        } catch (IOException e){
+            System.out.println("Something got wrong!!");
+        }
     }
 }
