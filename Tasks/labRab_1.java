@@ -17,11 +17,7 @@ public class labRab_1 {
     }
 
     public static void firstTask(){
-        int x = scanner.nextInt();
-        if (x % 2 == 0)
-            System.out.println("Четное.");
-        else
-            System.out.println("Нечетное.");
+        System.out.println(scanner.nextInt() % 2 == 0 ? "Четное" : "Нечетное");
     }
 
     public static void secondTask(){
