@@ -7,10 +7,10 @@ class box {
         return width + height + depth;
     }
 
-    double volume() { // без возврата
+    double volume() { // без возврата вместо double будет void
         return width * height * depth;
     }
-
+                                               // это конструктор если что
     void setDim(double w, double h, double d){ // правильнее задавать переменные для класса в самом классе
         width = w;                             // чтобы только у класса был доступ к инициализации переменных
         height = h;

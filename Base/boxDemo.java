@@ -16,7 +16,7 @@ class Box {
 }
 
 public class boxDemo {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Box myBox1 = new Box(10,3,14);
         Box myBox2 = new Box(5,3,2);
         System.out.println(myBox1.volume());
