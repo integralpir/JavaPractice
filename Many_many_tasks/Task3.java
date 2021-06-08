@@ -1,13 +1,13 @@
-import java.util.Scanner;
-
-public class Task3 {
+public class Task3{
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        long a = scanner.nextLong();
-        long b = a / 10;
-        if (b == 0)
-            System.out.println(a * a);
-        else
-            System.out.println((b * (b + 1)) * 100 + 25);
+        System.out.println(isPalindrome("123"));
+        System.out.println(isPalindrome("123321"));
+        System.out.println(isPalindrome("10001"));
+        System.out.println(isPalindrome("12321"));
+    }
+
+    public static boolean isPalindrome(String numberAsString){
+        StringBuilder numberAsStringModify = new StringBuilder(numberAsString);
+        return (numberAsString.equals(numberAsStringModify.reverse().toString()));
     }
 }
